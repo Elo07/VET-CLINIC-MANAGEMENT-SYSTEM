@@ -1,0 +1,37 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                        Assignment 1 - Milestone 3
+Full Name  : Ehimwenma Larry Okuonghae
+Student ID#: 145203238
+Email      : elokuonghae@myseneca.ca
+Section    : NGG
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1.void viewAllAppointments(struct ClinicData* data);
+This function is responsible for displaying all scheduled appointments in the right order. It retrieves data from the struct ClinicData object, which holds both patient and appointment information, and organizes the display based on the appointment date and time.The value of this function includes allowing clinic staff to quickly assess the upcoming appointments, helping in effective time management.The function contributes to the overall functionality of the system by providing a central feature for viewing all scheduled appointments.it also enhances user experience by providing a clear and organized view of all appointments.
+void sortAppointment(struct Appointment appoints[], int max);
+This function is responsible for sorting the appointments based on their date and time. It converts the date and time information into a comparable format, performs a sorting algorithm, and then converts it back to the original format. The value of this function includes facilitating efficient searching and retrieval of appointments, especially when searching for appointments on or around a specific date and ensuring that the appointment data is presented in a chronological order, aiding in readability and usability.
+void viewAppointmentSchedule(struct ClinicData* data);
+This function enables users to view the appointment schedule for a specific date. It prompts the user to input a date, and then it retrieves and displays all appointments scheduled for that particular day.The value of this function includes facilitating efficient appointment management by allowing users to focus on a specific date and helps in planning and resource allocation for the clinic, as staff can easily identify busy days or periods with lower appointment numbers.it also enhances the system's usability by providing a targeted view based on user input
+Together, these features improve the veterinary clinic system's organization, usability, and efficiency. They improve the user experience, help with efficient scheduling, and guarantee that data is presented in an understandable and logical way.
+
+2.While the scanf function is helpful for basic input, handling unexpected or invalid user inputs can make it difficult to handle and error-prone. Minimizing scanf calls is primarily done to lessen the possibility of input-related problems. When data is entered in a format that differs from what is expected, errors may arise because the function is sensitive to the input format. Because there are fewer possible sites of failure, the code is more resistant to input errors when input procedures are consolidated.Reducing scanf calls is consistent with the modular programming concept.. Each function or module should ideally have a well-defined responsibility, and by centralizing input processing, it becomes easier to manage and modify the input logic. This modular approach improves code maintainability, as changes to the input mechanism can be confined to a specific module without affecting the entire codebase.Minimizing the scanf function helps enhance the reliability, readability, and maintainability of the code
+
+
+3.Function: viewAllAppointments
+Module Placement: This function was placed in the client.c module.
+Reasoning:
+The viewAllAppointments function is responsible for displaying all scheduled appointments. It is part of the user interface logic and directly interacts with the user by presenting information. Placing it in the client.c module makes sense because this module is specifically designed to handle user interactions, menus, and overall program flow. Keeping user interface functions within the client.c module enhances code organization and readability. It separates user-related functionality from backend operations, adhering to the principles of modular design and maintaining a clear distinction between different aspects of the program.
+Function: viewAppointmentSchedule
+Module Placement: This function was also placed in the client.c module.
+Reasoning:
+Similar to viewAllAppointments, the viewAppointmentSchedule function deals with displaying appointment schedules, making it a natural fit for the client.c module. It is responsible for gathering user input regarding the date and presenting the corresponding appointment information. Placing it in the user interface module maintains a cohesive structure and facilitates a user-centric design.
+Function: sortAppointment
+Module Placement: This function was placed in the client.c module.
+Reasoning:
+The sortAppointment function is responsible for sorting appointment records, primarily for display purposes. Placing it in the client.c module aligns with the separation of concerns, as it deals with how data is presented to the user rather than core data manipulation. This function enhances the user experience by ensuring that appointments are displayed in a sorted and easily understandable order. It contributes to the clarity and organization of the user interface logic within the client.c module.
