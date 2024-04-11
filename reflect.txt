@@ -1,4 +1,4 @@
-///////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
                                Reflection
                         Assignment 1 - Milestone 3
 Full Name  : Ehimwenma Larry Okuonghae
@@ -10,7 +10,7 @@ Authenticity Declaration:
 I declare this submission is the result of my own work and has not been
 shared with any other student or 3rd party content provider. This submitted
 piece of work is entirely of my own creation.
-///////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
 
 1.void viewAllAppointments(struct ClinicData* data);
 This function is responsible for displaying all scheduled appointments in the right order. It retrieves data from the struct ClinicData object, which holds both patient and appointment information, and organizes the display based on the appointment date and time.The value of this function includes allowing clinic staff to quickly assess the upcoming appointments, helping in effective time management.The function contributes to the overall functionality of the system by providing a central feature for viewing all scheduled appointments.it also enhances user experience by providing a clear and organized view of all appointments.

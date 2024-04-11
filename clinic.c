@@ -1,6 +1,6 @@
 /*/////////////////////////////////////////////////////////////////////////
                         Assignment 1 - Milestone 3
-Full Name  : Ehimwenma Larry Okuonghae
+Full Name  : Ehimwenma larry Okuonghae
 Student ID#: 145203238
 Email      : elokuonghae@myseneca.ca
 Section    : NGG
